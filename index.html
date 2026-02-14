@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-services border">
+                <div class="text"><a href="show_services.html">Services</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-taxi"></i>
+                </div>
+            </div>
+
+            <div class="nav-mechanics border">
+                <div class="text"><a href="mechanics.html">Mechanics</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+            </div>
+
+            <div class="nav-gallery border">
+                <div class="text"><a href="gallery.html">Gallery</a></div>
+                <div class="add-icon">
+                    <i class="fa-regular fa-images"></i>
+                </div>
+            </div>
+
+            <div class="nav-booking border">
+                <div class="text"><a href="book_services.html">Book Your Service</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+            </div>
+
+            <div class="nav-contact border">
+                <div class="text"><a href="contact.html">Contact Us</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="banner-heading">
+            <pre><h1><span>Smart</span> Mechanical Workshop</h1></pre>
+            <h3>Expert Car Care by Highly Trained Mechanics</h3>
+        </div>
+
+        <div class="banner-buttons">
+            <button class="primary-button" onclick="goToBook()">Book Services</button>
+            <button class="second-button" onclick="goToServices()">View Services</button>
+        </div>
+
+        <div class="banner-section">
+            <img src="main-logo.png" alt="banner">
+        </div>
+
+        <hr>
+
+        <div class="usp">
+            <div class="usp-heading">
+                <h2>Why choose Smart Mechanical Workshop</h2>
+                <h4>Expert service. Honest pricing. Trusted mechanics.</h4>
+            </div>
+
+            <div class="usp-main-1">
+                <div class="box1 box">
+                    <div class="box-content">
+                        <b class="heading">✔ Highly trained & certified mechanics</b>
+                        <div class="box-img" style="background-image: url('box-1.png');"></div>
+                        <b>🔧 Expert Technicians You Can Trust</b>
+                    </div>
+                </div>
+
+                <div class="box2 box">
+                    <div class="box-content">
+                        <b class="heading"> ✔ Advanced diagnostic machines</b>
+                        <div class="box-img" style="background-image: url('box-2.png');"></div>
+                        <b>🖥️ Computerized Vehicle Health Check</b>
+                    </div>
+                </div>
+
+                <div class="box3 box">
+                    <div class="box-content">
+                        <b class="heading">✔ Genuine spare parts only</b>
+                        <div class="box-img" style="background-image: url('box-3.png');"></div>
+                        <b>⚙️ OEM Quality Parts Guaranteed</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="usp-main-2">
+                <div class="box4 box">
+                    <div class="box-content">
+                        <b class="heading">✔ Transparent pricing</b>
+                        <div class="box-img" style="background-image: url('box-4.png');"></div>
+                        <b>💰 No Hidden Charges – Fair Estimates</b>
+                    </div>
+                </div>
+
+                <div class="box5 box">
+                    <div class="box-content">
+                        <b class="heading"> ✔ Fast service delivery</b>
+                        <div class="box-img" style="background-image: url('box-5.png');"></div>
+                        <b>⏱️ Quick Turnaround Without Compromise</b>
+                    </div>
+                </div>
+
+                <div class="box6 box">
+                    <div class="box-content">
+                        <b class="heading">✔ Free vehicle inspection</b>
+                        <div class="box-img" style="background-image: url('box-6.png');"></div>
+                        <b>🚗 Complete Safety Check at No Cost</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="why-container">
+            <div class="why-text">
+                <h2>Why Choose Smart Mechanical Workshop?</h2>
+
+                <ul class="usp-list">
+                    <li>✔ Certified & experienced mechanics</li>
+                    <li>✔ Advanced diagnostic equipment</li>
+                    <li>✔ Transparent pricing</li>
+                    <li>✔ Genuine OEM spare parts</li>
+                    <li>✔ Free vehicle inspection</li>
+                </ul>
+
+                <a href="#contact" class="why-cta">Talk to Our Experts →</a>
+            </div>
+
+            <div class="why-image">
+                <img src="why-choose-img.png" alt="Workshop Image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2026 <span>Smart Mechanical Workshop</span> | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-services border">
+                <div class="text"><a href="show_services.html">Services</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-taxi"></i>
+                </div>
+            </div>
+
+            <div class="nav-mechanics border">
+                <div class="text"><a href="mechanics.html">Mechanics</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+            </div>
+
+            <div class="nav-gallery border">
+                <div class="text"><a href="gallery.html">Gallery</a></div>
+                <div class="add-icon">
+                    <i class="fa-regular fa-images"></i>
+                </div>
+            </div>
+
+            <div class="nav-booking border">
+                <div class="text"><a href="book_services.html">Book Your Service</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+            </div>
+
+            <div class="nav-contact border">
+                <div class="text"><a href="contact.html">Contact Us</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="booking-container">
+        <h2 class="book-services-heading">Book Your Service</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" id="name" placeholder="Customer Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <input type="text" id="brand" placeholder="Car Brand">
+            <input type="text" id="model" placeholder="Car Model">
+
+            <label>Selected Services:</label>
+            <div id="selectedServices">
+                <!-- Auto filled -->
+            </div>
+
+            <label>Preferred Date:</label>
+            <input type="date" id="date">
+
+            <label>Service Type:</label>
+            <select id="serviceType">
+                <option value="normal">Normal</option>
+                <option value="express">Express (+₹500)</option>
+            </select>
+
+            <button type="button" onclick="confirmBooking()">Confirm Booking</button>
+        </form>
+
+        <div id="summary"></div>
+        <div id="successMessage"></div>
+
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>

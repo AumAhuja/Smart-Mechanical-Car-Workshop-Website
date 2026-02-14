@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Us Page</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-services border">
+                <div class="text"><a href="show_services.html">Services</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-taxi"></i>
+                </div>
+            </div>
+
+            <div class="nav-mechanics border">
+                <div class="text"><a href="mechanics.html">Mechanics</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+            </div>
+
+            <div class="nav-gallery border">
+                <div class="text"><a href="gallery.html">Gallery</a></div>
+                <div class="add-icon">
+                    <i class="fa-regular fa-images"></i>
+                </div>
+            </div>
+
+            <div class="nav-booking border">
+                <div class="text"><a href="book_services.html">Book Your Service</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+            </div>
+
+            <div class="nav-contact border">
+                <div class="text"><a href="contact.html">Contact Us</a></div>
+                <div class="add-icon">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="c-heading">
+            <h1>Let’s Get in Touch</h1>
+            <h3>Have a question, need a service, or want to join our membership?</h3>
+            <hr>
+        </div>
+    </div>
+
+    <div class="c-main-section">
+        <div class="info-strip">
+            <div class="address">
+                <h3>📍Address</h3>
+                <p>
+                    Car Smart Auto Services<br>
+                    2nd Floor, XYZ Complex,<br>
+                    Near ABC Petrol Pump,<br>
+                    Your City – 123456<br><br>
+
+                    Easy parking available
+                </p>
+            </div>
+
+            <div class="phone">
+                <h3>📞Phone</h3>
+                <p>
+                    Call Us Anytime<br><br>
+                    +91 98765 43210<br>
+                    +91 91234 56789<br><br>
+
+                    Emergency support available
+                </p>
+            </div>
+
+            <div class="email">
+                <h3>📧Email</h3>
+                <p>
+                    Email Support<br><br>
+                    support@carsmartautoservices.com<br>
+                    info@carsmartautoservices.com<br><br>
+
+                    We reply within 24 hours
+                </p>
+            </div>
+
+            <div class="hours">
+                <h3>⏰Working Hours</h3>
+                <p>
+                    Workshop Timings<br>
+                    Monday – Saturday<br>
+                    9:00 AM – 7:00 PM<br><br>
+
+                    🕒Sunday: Closed
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="c-form-section">
+            <div class="form">
+                <h2>Send Us a Message</h2>
+            </div>
+
+            <div class="form-card">
+                <form id="contactForm">
+                    <div class="dropdowns">
+                        <select id="queryType" name="query_type" required>
+                            <option value="" disabled selected>Select Query Type</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="service_booking">Service Booking</option>
+                            <option value="vehicle_issue">Vehicle Repair / Issue</option>
+                            <option value="maintenance">Maintenance & Servicing</option>
+                            <option value="diagnostic">Diagnostic Check</option>
+                            <option value="pricing">Pricing & Estimates</option>
+                            <option value="membership">Membership Details</option>
+                            <option value="feedback">Feedback / Complaint</option>
+                            <option value="emergency">Emergency Assistance</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <select id="membershipOption" name="membership_option">
+                            <option value="" disabled selected>Select Membership Option</option>
+                            <option value="not_member">Not a Member</option>
+                            <option value="join">Want to Join Membership</option>
+                            <option value="existing">Existing Member</option>
+                            <option value="renewal">Membership Renewal</option>
+                            <option value="benefits">Membership Benefits Inquiry</option>
+                        </select>
+                    </div>
+
+                    <textarea id="messageBox" 
+                        name="message" 
+                        placeholder="Please describe your issue or request in detail..."
+                        rows="20"></textarea>
+
+                    <div class="submit-button-box">
+                        <button type="submit" id="submitBtn" class="submit-btn" disabled>
+                            Submit
+                        </button>
+                    </div>
+
+                    <p id="successMessage" class="success-msg"></p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>© 2026 <span>Smart Mechanical Workshop</span> | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="contact_us.js"></script>
+</body>
+</html>
